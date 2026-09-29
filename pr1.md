@@ -111,3 +111,10 @@
 	string
 	using
 
+Задание 4
+=========
+
+    >teem@teem:~/School/ConUpr$ ./reg test
+    Done
+
+
