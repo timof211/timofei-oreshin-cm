@@ -1,0 +1,16 @@
+#!/bin/bash
+
+in=$1
+len=${#in}
+
+printf "+-"
+for ((i = 0; i < len; i++)); do
+    printf "-"
+done
+printf -- "-+"
+printf -- "\n| $in |\n"
+printf "+-"
+for ((i = 0; i < len; i++)); do
+    printf "-"
+done
+printf -- "-+"
