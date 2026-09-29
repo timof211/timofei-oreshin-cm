@@ -123,5 +123,13 @@
     >teem@teem:~/School/ConUpr/timofei-oreshin-cm$ ./check_comment example_code.py
     True
 
+Задание 8
+=========
 
+    >teem@teem:~/School/ConUpr/timofei-oreshin-cm$ ./archiver txt
+    ./example_for_archiver/a.txt
+    ./example_for_archiver/c.txt
+    ./example_for_archiver/b.txt
+    ./example_for_archiver/d.txt
+    Done
 

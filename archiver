@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ext=$1
+find -name "*.$ext" >> templist
+while read line; do
+    tar -rf archive.tar $line
+    echo $line
+done <templist
+rm templist
+echo Done
