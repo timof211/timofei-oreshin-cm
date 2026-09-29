@@ -111,7 +111,7 @@
 	string
 	using
 
-Задание 4
+Задание 5
 =========
 
     >teem@teem:~/School/ConUpr$ ./reg test
