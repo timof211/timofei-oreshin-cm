@@ -82,7 +82,7 @@
 Задание 4
 =========
 
-	>teem@DESKTOP-6FJQ3M1:~$ cat test.txt | sed 's/[^a-z_ ]/ /g'| tr -s '[[:space:]]' '\n' | sort | uniq
+	>teem@DESKTOP-6FJQ3M1:~$ cat example_code.cpp | sed 's/[^a-z_ ]/ /g'| tr -s '[[:space:]]' '\n' | sort | uniq
 
 	build_tree_objects
 	cin
