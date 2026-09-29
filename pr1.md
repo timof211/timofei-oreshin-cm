@@ -82,3 +82,32 @@
 Задание 4
 =========
 
+	>teem@DESKTOP-6FJQ3M1:~$ cat test.txt | sed 's/[^a-z_ ]/ /g'| tr -s '[[:space:]]' '\n' | sort | uniq
+
+	build_tree_objects
+	cin
+	cl_application
+	cout
+	endl
+	exec_app
+	find
+	h
+	hpp
+	if
+	include
+	int
+	iostream
+	main
+	namespace
+	npos
+	nullptr
+	ob_application
+	return
+	root_name
+	set
+	std
+	stdio
+	stdlib
+	string
+	using
+
