@@ -133,3 +133,9 @@
     ./example_for_archiver/d.txt
     Done
 
+Задание 9
+=========
+
+    >teem@teem:~/School/ConUpr/timofei-oreshin-cm/T9_tabfix$ ./tabfix tabfix_in out
+    Done
+
