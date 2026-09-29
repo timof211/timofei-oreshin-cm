@@ -111,10 +111,17 @@
 	string
 	using
 
-Задание 4
+Задание 5
 =========
 
     >teem@teem:~/School/ConUpr$ ./reg test
     Done
+
+Задание 6
+=========
+
+    >teem@teem:~/School/ConUpr/timofei-oreshin-cm$ ./check_comment example_code.py
+    True
+
 
 

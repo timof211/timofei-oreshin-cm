@@ -1,0 +1,19 @@
+#!/bin/bash
+
+line=$(head -n 1 $1)
+if [[ "$1" == *".py"* ]]; then
+    if [[ $line =~ ^# ]]; then
+        echo True
+    else
+        echo False
+    fi
+elif [[ "$1" == *".js"* || "$1" == *".c" ]]; then
+    if [[ $line =~ ^// ]]; then
+        echo True
+    else
+        echo False
+    fi
+else
+    echo "Unsupported file format"
+fi
+
