@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dir="${1:-.}"
+find $dir -type f -exec md5sum {} + | sort | uniq -w32 -D
+

@@ -52,6 +52,7 @@
 
 Задание 2
 =========
+
     >teem@teem:/etc$  grep -v '^#' protocols | awk 'NF {print $2, $1}'|sort -rn | head -5
     262 mptcp
     143 ethernet
@@ -122,6 +123,14 @@
 
     >teem@teem:~/School/ConUpr/timofei-oreshin-cm$ ./check_comment example_code.py
     True
+
+Задание 7
+=========
+
+    >teem@teem:~/School/ConUpr/timofei-oreshin-cm/T7_finddups$ ./find_dups 
+    d41d8cd98f00b204e9800998ecf8427e  ./ex
+    d41d8cd98f00b204e9800998ecf8427e  ./exdir/ex1
+
 
 Задание 8
 =========
