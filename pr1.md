@@ -139,3 +139,22 @@
     >teem@teem:~/School/ConUpr/timofei-oreshin-cm/T9_tabfix$ ./tabfix tabfix_in out
     Done
 
+Задание 10
+=========
+
+    >teem@teem:~/School/ConUpr/timofei-oreshin-cm/T10_findempty$ ./find_empty /etc
+    /etc/subgid-
+    /etc/legal
+    /etc/libpaper.d
+    /etc/.pwd.lock
+    find: ‘/etc/credstore.encrypted’: Permission denied
+    /etc/opt
+    /etc/colord
+    /etc/keyutils
+    /etc/usb_modeswitch.d
+    /etc/guest-session
+    /etc/plymouth
+    /etc/subuid-
+    find: ‘/etc/credstore’: Permission denied
+    /etc/binfmt.d
+
