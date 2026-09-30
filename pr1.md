@@ -50,6 +50,8 @@
     uuidd
     www-data
 
+
+
 Задание 2
 =========
 
@@ -118,11 +120,53 @@
     >teem@teem:~/School/ConUpr$ ./reg test
     Done
 
+reg
+-----
+
+    #!/bin/bash
+
+    in=$1
+    len=${#in}
+
+    printf "+-"
+    for ((i = 0; i < len; i++)); do
+        printf "-"
+    done
+    printf -- "-+"
+    printf -- "\n| $in |\n"
+    printf "+-"
+    for ((i = 0; i < len; i++)); do
+        printf "-"
+    done
+    printf -- "-+"
+
 Задание 6
 =========
 
     >teem@teem:~/School/ConUpr/timofei-oreshin-cm$ ./check_comment example_code.py
     True
+
+check_comment
+-------------
+
+#!/bin/bash
+
+    line=$(head -n 1 $1)
+    if [[ "$1" == *".py"* ]]; then
+        if [[ $line =~ ^# ]]; then
+            echo True
+        else
+            echo False
+        fi
+    elif [[ "$1" == *".js"* || "$1" == *".c" ]]; then
+        if [[ $line =~ ^// ]]; then
+            echo True
+        else
+            echo False
+        fi
+    else
+        echo "Unsupported file format"
+    fi
 
 Задание 7
 =========
@@ -131,6 +175,13 @@
     d41d8cd98f00b204e9800998ecf8427e  ./ex
     d41d8cd98f00b204e9800998ecf8427e  ./exdir/ex1
 
+find_dups
+---------
+
+    #!/bin/bash
+
+    dir="${1:-.}"
+    find $dir -type f -exec md5sum {} + | sort | uniq -w32 -D
 
 Задание 8
 =========
@@ -142,11 +193,27 @@
     ./example_for_archiver/d.txt
     Done
 
+archiver
+--------
+
+    #!/bin/bash
+
+    dir="${1:-.}"
+    find $dir -type f -exec md5sum {} + | sort | uniq -w32 -D
+
 Задание 9
 =========
 
     >teem@teem:~/School/ConUpr/timofei-oreshin-cm/T9_tabfix$ ./tabfix tabfix_in out
     Done
+
+tabfix
+------
+
+    #!/bin/bash
+
+    sed 's/    /\t/g' $1 >> $2
+    echo Done
 
 Задание 10
 =========
@@ -166,4 +233,11 @@
     /etc/subuid-
     find: ‘/etc/credstore’: Permission denied
     /etc/binfmt.d
+
+find_empty
+----------
+
+    #!/bin/bash
+
+    find $1 -maxdepth 1 -empty 
 
