@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 cd "$(dirname "$0")"
-python3 shell_emulator.py
+python3 main.py

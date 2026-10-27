@@ -10,7 +10,7 @@ class ShellEmulator:
     def __init__(self, root: tk.Tk, vfs_path: str, script_path: str | None):
         self.root = root
         self.root.title(f"Shell Emulator — {VFS_NAME}")
-        self.root.geometry("700x450")
+        self.root.geometry("1920x1080")
 
         self.cwd = "/"
         self.running = True
