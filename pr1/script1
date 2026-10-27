@@ -1,4 +1,12 @@
-#!/usr/bin/env bash
+pwd
+ls
+ls /
 
-cd "$(dirname "$0")"
-python3 main.py
+mkdir /a
+touch /a/b.txt
+ls /a
+cat /a/b.txt
+rm /a/b.txt
+ls /a
+rm /a
+ls

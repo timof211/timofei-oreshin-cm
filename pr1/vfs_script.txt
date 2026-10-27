@@ -1,7 +1,0 @@
-cd A
-cd B
-ls
-
-#thisisa comment
-
-adnsadufboasf

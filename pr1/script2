@@ -1,4 +1,17 @@
-#!/usr/bin/env bash
+ls
+cat readme.txt
+cat notes.md
 
-cd "$(dirname "$0")"
-python3 main.py --vfs ./vfs_root
+cd docs
+pwd
+ls
+cat guide.txt
+cd ..
+
+cat data.bin
+
+mkdir work
+touch work/tmp.txt
+ls work
+rm work
+ls

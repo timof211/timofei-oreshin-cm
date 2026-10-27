@@ -1,5 +1,28 @@
-#!/usr/bin/env bash
+pwd
+ls
+ls /home
 
-cd "$(dirname "$0")"
-python3 main.py --vfs ./vfs_root --script ./vfs_script.txt
+cd /home
+pwd
+ls
+cd user
+pwd
+ls
+cd projects/demo
+pwd
+ls
+cat main.py
 
+cat /home/user/notes.txt /etc/config.txt
+
+cat /data.bin
+
+mkdir /tmp
+touch /tmp/test.txt
+ls /tmp
+rm /tmp/test.txt
+ls /tmp
+rm /tmp
+ls /
+
+exit
