@@ -270,7 +270,6 @@ class ShellEmulator:
             try:
                 self.print(data.decode("utf-8"))
             except UnicodeDecodeError:
-                # двоичные данные — в base64
                 self.print(base64.b64encode(data).decode("ascii"))
 
     def cmd_mkdir(self, args):
